@@ -12,3 +12,13 @@ console.log(elementbyClass);
 
 const elementbyId = document.getElementById("firstBlock");
 console.log(elementbyId);
+
+//method with loop for
+for (let i = 0; i < allparagraph.length; i++) {
+  console.log(`paragraph number ${i + 1}`, allparagraph[i]);
+}
+
+//method with loop forEach - more more suitable version
+allparagraph.forEach(function (currentValue, currentIndex) {
+  console.log(`paragraph number ${currentIndex + 1}`, currentValue);
+});

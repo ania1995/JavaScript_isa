@@ -1,12 +1,10 @@
-console.dir();
-
-const newOneElement = document.createElement("div");
-newOneElement.id = "preFirstBlock";
-newOneElement.innerText = "Wstawiony PreFirst DIV";
-
-console.log(newOneElement);
-
-const previouslyElement = document.querySelector("#firstBlock");
 const parent = document.querySelector("body");
+parent.innerText = "";
 
-parent.insertBefore(newOneElement, previouslyElement);
+for (let i = 0; i < 20; i++) {
+  const newElement = document.createElement("div");
+  newElement.textContent = `Element ${i + 1}`;
+  newElement.classList = `css-class-${i + 1}`;
+  console.log(newElement);
+  parent.appendChild(newElement);
+}

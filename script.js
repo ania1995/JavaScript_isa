@@ -1,14 +1,8 @@
-// var num1 = 5;
-// var num2 = 10;
-// var sum = num1 + num2;
+// Change content of element of id="firstBlock";
+const newText = document.getElementById("firstBlock");
+newText.innerHTML = "New text DIV";
 
-// console.log(sum);
+//Add new class="new-class";
 
-const allparagraph = document.querySelectorAll("p");
-console.log(allparagraph);
-
-const elementbyClass = document.querySelector(".firstParagraph");
-console.log(elementbyClass);
-
-const elementbyId = document.getElementById("firstBlock");
-console.log(elementbyId);
+const newClass = document.querySelector(".secondParagraph");
+newClass.classList.add("new-class");
